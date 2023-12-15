@@ -1,0 +1,61 @@
+<!doctype html>
+<head lang="ko">
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            margin-bottom: 70px;
+        }
+        form{
+            justify-items: center;
+        }
+        form input{
+            display: block;
+            background-color: rgb(217, 217, 217);
+            border: 0;
+            width: 380px;
+            height: 40px;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        #submit{
+            margin: auto;
+            background-color: black;
+            color: white;
+            border: 0;
+            height: 50px;
+            width: 170px;
+            margin-top: 20px;
+        }
+        html, body{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Login</h1>
+        </div>
+        <div class="container">
+            <form id="form">
+                <input id="id" placeholder="아이디">
+                <input id="password" type="password" placeholder="비밀번호">
+                <input id="submit" type="submit" value="로그인">
+            </form>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
