@@ -14,6 +14,7 @@ function submitHandler(event){
     if(idTest(edit_id)){
         //비밀번호 규칙 확인
         if(pwTest(edit_pw)){
+            id_list.push(edit_id)
             alert("로그인 되셨습니다.")
         }else{
             alert("비밀번호는 5자리 이상, 숫자 1개, 소문자 1개를 포함해야 합니다")
@@ -27,7 +28,6 @@ function idTest(str){
     if(id_list.includes(str)){
         return false
     }else{
-        id_list.push(str)
         return true
     }
 }
